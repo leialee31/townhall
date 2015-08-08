@@ -29,7 +29,7 @@
 
 	<!-- Description -->
 				<div class="eventssidebar">
-{.if sourceUrl}<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="sqs-block-button sqs-block-button-element--medium">Get Tickets</a></div>{.end}
+{.if sourceUrl}<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">Get Tickets</a></div>{.end}
 				</div>
 	<div class="eventitem-column-content">
 		{.section body} {@} {.end}
