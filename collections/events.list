@@ -112,6 +112,9 @@
 				{.or}
 					{.section body}
 					<div class="eventlist-description">{@}</div>
+					<div class="eventssidebar">
+					hello
+					</div>
 					{.end}
 				{.end}
 
