@@ -104,7 +104,7 @@
 			<!-- Information Column -->
 
 			<div class="entry-content">
-
+				<div class="eventssidebar">hello</div>
 				<!-- Description -->					
 				{.section excerpt}
 				<div class="eventlist-excerpt">{@}</div>
@@ -112,9 +112,6 @@
 				{.or}
 					{.section body}
 					<div class="eventlist-description">{@}</div>
-					<div class="eventssidebar">
-					hello
-					</div>
 					{.end}
 				{.end}
 
