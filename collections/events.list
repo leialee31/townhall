@@ -104,7 +104,6 @@
 			<!-- Information Column -->
 
 			<div class="entry-content">
-				<div class="eventssidebar">hello</div>
 				<!-- Description -->					
 				{.section excerpt}
 				<div class="eventlist-excerpt">{@}</div>

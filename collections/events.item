@@ -28,7 +28,7 @@
 
 
 	<!-- Description -->
-
+				<div class="eventssidebar">hello</div>
 	<div class="eventitem-column-content">
 		{.section body} {@} {.end}
 
