@@ -28,7 +28,9 @@
 
 
 	<!-- Description -->
-				<div class="eventssidebar">hello</div>
+				<div class="eventssidebar">
+{.if source-url}{@}{.end}
+				</div>
 	<div class="eventitem-column-content">
 		{.section body} {@} {.end}
 
