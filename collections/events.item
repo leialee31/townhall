@@ -29,18 +29,16 @@
 
 	<!-- Description -->
 	<div class="eventitem-column-content">
-	{.equal? collection.urlId "5578b6dde4b042afe8e85240"}
+		{.section excerpt}
+			<div class="eventlist-excerpt">{eventlist-excerpt}</div>
+		{.end}
 		{.if sourceUrl}
-			{.section excerpt}
-				<div class="eventlist-excerpt">{@}</div>
-				{.end}
-		<div class="eventsidebar">
+			<div class="eventsidebar">
 			<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
 			Get Tickets</a>
 			</div>
 		</div>
 		{.end}
-	{.end}
 
 		{.section body} {@} {.end}
 
