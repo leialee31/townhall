@@ -30,7 +30,7 @@
 	<!-- Description -->
 	<div class="eventitem-column-content">
 		{.section excerpt}
-			<div class="eventlist-excerpt">{eventlist-excerpt}</div>
+			<div class="eventlist-excerpt">{excerpt}</div>
 		{.end}
 		{.if sourceUrl}
 			<div class="eventsidebar">
