@@ -29,6 +29,7 @@
 
 	<!-- Description -->
 	<div class="eventitem-column-content">
+	{.equal? collection.urlId "5578b6dde4b042afe8e85240"}
 		{.if sourceUrl}
 			{.section excerpt}
 				<div class="eventlist-excerpt">{@}</div>
@@ -39,6 +40,7 @@
 			</div>
 		</div>
 		{.end}
+	{.end}
 
 		{.section body} {@} {.end}
 
