@@ -1,0 +1,9 @@
+<div class="eventsidebar">
+        <h2 class="Event Details">Event Details</h2>
+        	<ul class="eventsinfo">
+				<li>Door Time: </li>
+				<li>Ticket Price: </li>
+				<li>How to Get Tickets: </li>
+				<li>Producer: </li>
+			</ul>
+    </div>
