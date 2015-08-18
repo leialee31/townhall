@@ -29,7 +29,7 @@
 
 	<!-- Description -->
 	<div class="eventitem-column-content">
-        <div style="width: 60%; max-width: 600px; text-align: justify; display: block;">
+        <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
 		{.section body} {@} {.end}
 		<p class="entry-actions">
 	    	{@|like-button}{@|social-button-inline}
