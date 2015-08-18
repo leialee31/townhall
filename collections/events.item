@@ -28,8 +28,8 @@
 
 
 	<!-- Description -->
-	<div class="eventitem-column-content" style="float: right; text-align: right; max-width: 300px;">
-		<div class="eventsidebar">
+	<div class="eventitem-column-content>
+		<div class="eventsidebar" style="float: right; text-align: right; max-width: 300px; display: inline;">
 		{.if sourceUrl}
 			
 			<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
