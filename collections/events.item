@@ -41,6 +41,7 @@
 		{.end}
 		</div>
 
+<div style="float:left; max-width: 800px;">
 		{.section body} {@} {.end}
 
 		<p class="entry-actions">
