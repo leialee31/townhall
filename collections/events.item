@@ -28,7 +28,7 @@
 
 
 	<!-- Description -->
-	<div class="eventitem-column-content">
+	<div class="eventitem-column-content" style="float: right; text-align: right; max-width: 300px;">
 		<div class="eventsidebar">
 		{.if sourceUrl}
 			
