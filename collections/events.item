@@ -34,6 +34,9 @@
 		<p class="entry-actions">
 	    	{@|like-button}{@|social-button-inline}
 		</p>
+		</div>
+	</div>
+	<div class="eventitem-column-content">
 		<!-- EVENTS SIDEBAR -->
 		<div class="eventsidebar" style="float: right; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: inline-block;">
 		{.if sourceUrl}
@@ -46,14 +49,16 @@
 			<div class="">
 			<ul class="sidebarul">
 			<li>
-			<
+			Producer:
+			</li>
+			<li>
+			Ticket Price:
 			</li>
 			</ul>
 			<div class="eventlist-excerpt">{excerpt}</div>
 			</div>
 		{.end}
 		</div>
-	</div>
 
 	<div class="clear"></div>
 
