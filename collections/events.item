@@ -34,8 +34,7 @@
 		<p class="entry-actions">
 	    	{@|like-button}{@|social-button-inline}
 		</p>
-		</div>
-		<--! EVENTS SIDEBAR -->
+		<!-- EVENTS SIDEBAR -->
 		<div class="eventsidebar" style="float: right; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: inline-block;">
 		{.if sourceUrl}
 			
@@ -44,7 +43,14 @@
 			</div>
 		{.end}
 		{.section excerpt}
+			<div class="">
+			<ul class="sidebarul">
+			<li>
+			<
+			</li>
+			</ul>
 			<div class="eventlist-excerpt">{excerpt}</div>
+			</div>
 		{.end}
 		</div>
 	</div>
