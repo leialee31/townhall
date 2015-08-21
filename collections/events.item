@@ -23,8 +23,9 @@
 		  {@} 
 		  {.end}
 		<!-- end BODY -->
-		<!-- EVENTS SIDEBAR -->
-		  <div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; border: 1px solid #bebebe; ">
+	   </div>
+	  		<!-- EVENTS SIDEBAR -->
+		  <div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; border-left: 1px solid #bebebe; ">
 		    {.if sourceUrl}
 			  <div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
 			  Get Tickets</a>
@@ -47,7 +48,6 @@
 		  </div>
 	     </div>
 	    <!-- end EVENTS SIDEBAR -->
-	  </div>
     <!-- end Description -->
   	<p class="entry-actions">
 	  {@|like-button}{@|social-button-inline}
