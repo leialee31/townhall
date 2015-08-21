@@ -34,11 +34,11 @@
 		  <!-- Sidebar Information -->
 		    <div class="sidebarInfo" style="font-weight: bold; ">
 			  <ul class="event-meta"> 
-			 {.if addressLine1}<li class="event-meta-address event-meta-item">Ticket Price: {addressLine1}</li>{.end}
-			  {.if addressTitle}<li class="event-meta-address event-meta-item">Door Time: {addressTitle}</li>{.end}
-			 {.if addressLine2}<li class="event-meta-address event-meta-item"> How to Get Tickets: {addressLine2}</li>{.end}
-			 {.if addressCountry}<li class="event-meta-address event-meta-item">Producer: {addressCountry}</li>{.end}
-			 </ul>
+			 {.if addressLine1}<p>Ticket Price: {addressLine1}</lp>{.end}
+			 {.if addressTitle}<p>Door Time: {addressTitle}</p>{.end}
+			 {.if addressLine2}<p> How to Get Tickets: {addressLine2}</p>{.end}
+			 {.if addressCountry}<p>Producer: {addressCountry}</li>{.end}
+			 </p>
             </div> 
           <!-- end Sidebar Information -->
 		  </div>
