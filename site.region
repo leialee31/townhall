@@ -55,7 +55,7 @@
           <div class="title-desc-wrapper{.main-image?} has-main-image{.or} no-main-image{.end}" data-content-field="main-image">
             <div class="title-desc-inner" data-collection-id="{id}">
               {.if startDate}
-              <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1></div>
+              <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1><p>Subtitle</p></div>
               <br> <!-- this keeps the inline-blocks from collapsing -->
               <div class="page-desc">
                 <p class="event-time">
