@@ -28,11 +28,6 @@
 	    	{@|like-button}{@|social-button-inline}
 		</p>
 		</div>
-		<!-- Add to Google Calendar / Add to iCal -->
-		<ul class="event-meta eventitem-addtocallinks">
-			<li class="eventitem-addtocallink event-meta-item"><a href="{@|google-calendar-url}">&#10010; gCal</a></li>
-			<li class="eventitem-addtocallink event-meta-item"><a href="{fullUrl}?format=ical">&#10010; iCal</a></li>
-		</ul>
 	</div>
 	<div class="eventitem-column-content">
 		<!-- EVENTS SIDEBAR -->
@@ -43,7 +38,7 @@
 			</div>
 		{.end}
 		{.section excerpt}
-		<--! Sidebar Information -->
+		<!-- Sidebar Information -->
 			<div class="sidebarInfo">
 			<p>
 			Producer:
@@ -58,7 +53,7 @@
 			</p>
 
 
-			<--! Excerpt <div class="eventlist-excerpt">{excerpt}</div> -->
+			<!-- Excerpt <div class="eventlist-excerpt">{excerpt}</div> -->
 			</div>
 		{.end}
 		</div>
