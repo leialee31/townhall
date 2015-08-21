@@ -55,7 +55,7 @@
           <div class="title-desc-wrapper{.main-image?} has-main-image{.or} no-main-image{.end}" data-content-field="main-image" style="padding-bottom: 12px; min-height: 400px;">
             <div class="title-desc-inner" data-collection-id="{id}" style="position: absolute; bottom: 0;">
               {.if startDate}
-              <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1><p style="color: white;">{.if excerpt}<div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px;">{excerpt}<time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?} &#8226; {startDate|date %l:%M%P}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}-->{.end}</time></div>{.end}</p>
+              <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1><p style="color: white;">{.if excerpt}<div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px;">{excerpt}{.end}<time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?} &#8226; {startDate|date %l:%M%P}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}</time></div>{.end}</p>
               <!--<p class="event-time">
                   {<time class="event-time-12hr"></span>{startDate|date %l:%M%P}{.same-day?}{.if endDate} &ndash; {endDate|date %l:%M%P}{.end}Removed end date{.end}</time>
                   <time class="event-time-24hr"></span>{startDate|date %H:%M}{.same-day?}{.if endDate} &ndash; {endDate|date %H:%M}{.end}{.end}</time>
