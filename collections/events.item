@@ -49,9 +49,9 @@
 	     </div>
 	    <!-- end EVENTS SIDEBAR -->
     <!-- end Description -->
-  	<p class="entry-actions">
+  	<!-- <p class="entry-actions">
 	  {@|like-button}{@|social-button-inline}
-    </p>
+    </p> -->
   	<div class="clear"></div>
   </article>
 {.end}
