@@ -20,10 +20,10 @@
 		  <!-- Sidebar Information -->
 		  {.section location}
 		    <div class="sidebarInfo" style="font-weight: bold; ">
-			 {.if addressLine1}<p>Ticket Price: {addressLine1}</p>{.end}
-			 {.if addressTitle}<p>Door Time: {addressTitle}</p>{.end}
-			 {.if addressLine2}<p> How to Get Tickets: {addressLine2}</p>{.end}
-			 {.if addressCountry}<p>Producer: {addressCountry}</li>{.end}
+			 {.if addressLine1}<p>Ticket Price: <br><span style="font-weight: normal;">{addressLine1}</span></p>{.end}
+			 {.if addressTitle}<p>Door Time: <br><span style="font-weight: normal;">{addressTitle}</span></p>{.end}
+			 {.if addressLine2}<p> How to Get Tickets: <br><span style="font-weight: normal;">{addressLine2}</span></p>{.end}
+			 {.if addressCountry}<p>Producer: <br><span style="font-weight: normal;">{addressCountry}</span>{.end}
 			 </p>
             </div> 
           {.end}
