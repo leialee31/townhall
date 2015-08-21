@@ -1,20 +1,6 @@
 <!-- Event Item -->
 {.section item}
   <article class="eventitem">
-    <!-- Basic Info -->
-	  <div class="eventitem-column-meta">
-		<!-- Location -->
-		  {.section location}
-		    <ul class="event-meta">
-			{.if addressTitle}<li class="event-meta-address event-meta-item">{addressTitle} <a href="http://maps.google.com?q={addressLine1} {addressLine2} {addressCountry}" target="_blank">(map)</a></li>{.end}
-			{.if addressLine1}<li class="event-meta-address event-meta-item">{addressLine1}</li>{.end}
-			{.if addressLine2}<li class="event-meta-address event-meta-item">{addressLine2}</li>{.end}
-			{.if addressCountry}<li class="event-meta-address event-meta-item">{addressCountry}</li>{.end}
-		    </ul>
-		  {.end}
-		<!-- end Location -->
-	  </div>
-    <!-- end Basic Info -->
     <!-- Description -->
 	  <div class="eventitem-column-content">
         <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
@@ -32,14 +18,15 @@
 			  </div>
 		    {.end}
 		  <!-- Sidebar Information -->
+		  {.section location}
 		    <div class="sidebarInfo" style="font-weight: bold; ">
-			  <ul class="event-meta"> 
-			 {.if addressLine1}<p>Ticket Price: {addressLine1}</lp>{.end}
+			 {.if addressLine1}<p>Ticket Price: {addressLine1}</p>{.end}
 			 {.if addressTitle}<p>Door Time: {addressTitle}</p>{.end}
 			 {.if addressLine2}<p> How to Get Tickets: {addressLine2}</p>{.end}
 			 {.if addressCountry}<p>Producer: {addressCountry}</li>{.end}
 			 </p>
             </div> 
+          {.end}
           <!-- end Sidebar Information -->
 		  </div>
 	     </div>
