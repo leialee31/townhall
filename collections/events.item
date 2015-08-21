@@ -24,14 +24,9 @@
 	<div class="eventitem-column-content">
         <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
 		{.section body} {@} {.end}
-		<p class="entry-actions">
-	    	{@|like-button}{@|social-button-inline}
-		</p>
-		</div>
-	</div>
-	<div class="eventitem-column-content">
+		<div class="eventitem-column-content">
 		<!-- EVENTS SIDEBAR -->
-		<div class="eventsidebar" style="float: right; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: inline-block;">
+		<div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; border-left: 1px solid black;">
 		{.if sourceUrl}
 			<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
 			Get Tickets</a>
@@ -39,14 +34,14 @@
 		{.end}
 		{.section excerpt}
 		<!-- Sidebar Information -->
-			<div class="sidebarInfo">
+			<div class="sidebarInfo" style="font-weight: bold; ">
 			<p>
-			Producer:
+			Producer: 
 			</p>
-			Ticket Price:
+			Ticket Price: 
 			</p>
 			<p>
-			Door Time:
+			Door Time: 
 			</p>
 			<p>
 			How to Get Tickets:
@@ -57,6 +52,13 @@
 			</div>
 		{.end}
 		</div>
+		<p class="entry-actions">
+	    	{@|like-button}{@|social-button-inline}
+		</p>
+		</div>
+
+	</div>
+	
 
 	<div class="clear"></div>
 
