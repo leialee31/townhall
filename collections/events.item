@@ -33,16 +33,12 @@
 		    {.end}
 		  <!-- Sidebar Information -->
 		    <div class="sidebarInfo" style="font-weight: bold; ">
-			  <p>
-			  {.if addressCountry}<li class="event-meta-address event-meta-item">Producer: {addressCountry}</li>{.end} 
-			  </p>
+			  <ul class="event-meta"> 
 			 {.if addressLine1}<li class="event-meta-address event-meta-item">Ticket Price: {addressLine1}</li>{.end}
-			  </p>
-			  <p>
 			  {.if addressTitle}<li class="event-meta-address event-meta-item">Door Time: {addressTitle}</li>{.end}
-			  </p>
-			  <p>
 			 {.if addressLine2}<li class="event-meta-address event-meta-item"> How to Get Tickets: {addressLine2}</li>{.end}
+			 {.if addressCountry}<li class="event-meta-address event-meta-item">Producer: {addressCountry}</li>{.end}
+			 </ul>
             </div> 
           <!-- end Sidebar Information -->
 		  </div>
