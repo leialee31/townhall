@@ -59,7 +59,7 @@
               <br> <!-- this keeps the inline-blocks from collapsing -->
               <div class="page-desc">
                 <p class="event-time">
-                  <time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}-->{.end}</time><br>
+                  <time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?} & #8226; {startDate|date %l:%M%P}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}-->{.end}</time><br>
                   <time class="event-time-12hr"></span>{startDate|date %l:%M%P}<!--{.same-day?}{.if endDate} &ndash; {endDate|date %l:%M%P}{.end}Removed end date-->{.end}</time>
                   <time class="event-time-24hr"></span>{startDate|date %H:%M}{.same-day?}{.if endDate} &ndash; {endDate|date %H:%M}{.end}{.end}</time>
                 </p>
@@ -78,15 +78,14 @@
                 {.end}
               </h1></div>
               <br> <!-- this keeps the inline-blocks from collapsing -->
-              <!-- 
               <div class="page-desc">
                 <p class="date entry-author">
                   <time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>{.section author}
                   <span class="author-name"><br>
                     <em>by</em> <a href="{collection.fullUrl}?author={author.id}">{displayName}</a>
                   </span>{.end}
-                </p>
-              </div>-->
+                </p>-->
+              </div>
               {.end}
             {.end}
             </div>
