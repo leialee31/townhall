@@ -52,7 +52,7 @@
             <div class="image-overlay-wrapper"></div>
           </div>
           {.end}
-          <div class="title-desc-wrapper{.main-image?} has-main-image{.or} no-main-image{.end}" data-content-field="main-image" style="padding-bottom: 12px;">
+          <div class="title-desc-wrapper{.main-image?} has-main-image{.or} no-main-image{.end}" data-content-field="main-image" style="padding-bottom: 12px; min-height: 400px;">
             <div class="title-desc-inner" data-collection-id="{id}" style="position: absolute; bottom: 0;">
               {.if startDate}
               <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1><p style="color: white;">{.if excerpt}<div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px;">{excerpt}<time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?} &#8226; {startDate|date %l:%M%P}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}-->{.end}</time></div>{.end}</p>
