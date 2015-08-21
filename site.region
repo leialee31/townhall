@@ -78,6 +78,7 @@
                 {.end}
               </h1></div>
               <br> <!-- this keeps the inline-blocks from collapsing -->
+              <!-- 
               <div class="page-desc">
                 <p class="date entry-author">
                   <time class="published" datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>{.section author}
@@ -85,7 +86,7 @@
                     <em>by</em> <a href="{collection.fullUrl}?author={author.id}">{displayName}</a>
                   </span>{.end}
                 </p>
-              </div>
+              </div>-->
               {.end}
             {.end}
             </div>
