@@ -1,72 +1,61 @@
 <!-- Event Item -->
-
 {.section item}
-<article class="eventitem">
-
-
-	<!-- Basic Info -->
-
-	<div class="eventitem-column-meta">
-
+  <article class="eventitem">
+    <!-- Basic Info -->
+	  <div class="eventitem-column-meta">
 		<!-- Location -->
-		{.section location}
-		<ul class="event-meta">
+		  {.section location}
+		    <ul class="event-meta">
 			{.if addressTitle}<li class="event-meta-address event-meta-item">{addressTitle} <a href="http://maps.google.com?q={addressLine1} {addressLine2} {addressCountry}" target="_blank">(map)</a></li>{.end}
 			{.if addressLine1}<li class="event-meta-address event-meta-item">{addressLine1}</li>{.end}
 			{.if addressLine2}<li class="event-meta-address event-meta-item">{addressLine2}</li>{.end}
 			{.if addressCountry}<li class="event-meta-address event-meta-item">{addressCountry}</li>{.end}
-		</ul>
-		{.end}
-	</div>
-
-
-	<!-- Description -->
-	<div class="eventitem-column-content">
+		    </ul>
+		  {.end}
+		<!-- end Location -->
+	  </div>
+    <!-- end Basic Info -->
+    <!-- Description -->
+	  <div class="eventitem-column-content">
         <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
-		{.section body} {@} {.end}
-		<div class="eventitem-column-content">
+		<!-- BODY -->
+		  {.section body} 
+		  {@} 
+		  {.end}
+		<!-- end BODY -->
 		<!-- EVENTS SIDEBAR -->
-		<div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; border-left: 1px solid black;">
-		{.if sourceUrl}
-			<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
-			Get Tickets</a>
-			</div>
-		{.end}
-		{.section excerpt}
-		<!-- Sidebar Information -->
-			<div class="sidebarInfo" style="font-weight: bold; ">
-			<p>
-			Producer: 
-			</p>
-			Ticket Price: 
-			</p>
-			<p>
-			Door Time: 
-			</p>
-			<p>
-			How to Get Tickets:
-			</p>
-
-
-			<!-- Excerpt <div class="eventlist-excerpt">{excerpt}</div> -->
-			</div>
-		{.end}
-		</div>
-		<p class="entry-actions">
-	    	{@|like-button}{@|social-button-inline}
-		</p>
-		</div>
-
-	</div>
-	
-
-	<div class="clear"></div>
-
-</article>
-
+		  <div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; ">
+		    {.if sourceUrl}
+			  <div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
+			  Get Tickets</a>
+			  </div>
+		    {.end}
+		  <!-- Sidebar Information -->
+		    <div class="sidebarInfo" style="font-weight: bold; ">
+			  <p>
+			  Producer: 
+			  </p>
+			  Ticket Price: 
+			  </p>
+			  <p>
+			  Door Time: 
+			  </p>
+			  <p>
+			  How to Get Tickets:
+            </div> 
+          <!-- end Sidebar Information -->
+		  </div>
+	     </div>
+	    <!-- end EVENTS SIDEBAR -->
+	  </div>
+    <!-- end Description -->
+  	<p class="entry-actions">
+	  {@|like-button}{@|social-button-inline}
+    </p>
+  	<div class="clear"></div>
+  </article>
 {.end}
-
-
+<!-- end Event Item -->
 <div class="clear"></div>
 
 
