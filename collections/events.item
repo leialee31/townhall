@@ -17,13 +17,6 @@
 			{.if addressCountry}<li class="event-meta-address event-meta-item">{addressCountry}</li>{.end}
 		</ul>
 		{.end}
-
-		<!-- Add to Google Calendar / Add to iCal -->
-		<ul class="event-meta eventitem-addtocallinks">
-			<li class="eventitem-addtocallink event-meta-item"><a href="{@|google-calendar-url}">&#10010; gCal</a></li>
-			<li class="eventitem-addtocallink event-meta-item"><a href="{fullUrl}?format=ical">&#10010; iCal</a></li>
-		</ul>
-
 	</div>
 
 
@@ -35,27 +28,37 @@
 	    	{@|like-button}{@|social-button-inline}
 		</p>
 		</div>
+		<!-- Add to Google Calendar / Add to iCal -->
+		<ul class="event-meta eventitem-addtocallinks">
+			<li class="eventitem-addtocallink event-meta-item"><a href="{@|google-calendar-url}">&#10010; gCal</a></li>
+			<li class="eventitem-addtocallink event-meta-item"><a href="{fullUrl}?format=ical">&#10010; iCal</a></li>
+		</ul>
 	</div>
 	<div class="eventitem-column-content">
 		<!-- EVENTS SIDEBAR -->
 		<div class="eventsidebar" style="float: right; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: inline-block;">
 		{.if sourceUrl}
-			
 			<div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink">
 			Get Tickets</a>
 			</div>
 		{.end}
 		{.section excerpt}
-			<div class="">
-			<ul class="sidebarul">
-			<li>
+		<--! Sidebar Information -->
+			<div class="sidebarInfo">
+			<p>
 			Producer:
-			</li>
-			<li>
+			</p>
 			Ticket Price:
-			</li>
-			</ul>
-			<div class="eventlist-excerpt">{excerpt}</div>
+			</p>
+			<p>
+			Door Time:
+			</p>
+			<p>
+			How to Get Tickets:
+			</p>
+
+
+			<--! Excerpt <div class="eventlist-excerpt">{excerpt}</div> -->
 			</div>
 		{.end}
 		</div>
