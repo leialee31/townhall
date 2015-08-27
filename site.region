@@ -12,6 +12,7 @@
       Y.Squarespace.FollowButtonUtils = {};
       Y.Squarespace.FollowButtonUtils.renderAll = function(){};
     </script>
+    <squarespace:script src="sqs-event-list.js" combo="true" />
   </head>
 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.main-image?} has-banner-image{.end}{.end}{.or}{.section collection}{.equal? typeName "index"}{.section collections}{.section 0}{.section mainImage} has-banner-image{.end}{.end}{.end}{.or}{.equal? typeName "album"}{.or}{.equal? typeName "gallery"}{.or}{.section mainImage} has-banner-image{.end}{.end}{.end}{.end}{.end}{.end}">
@@ -273,6 +274,17 @@
       <squarespace:script src="rafscroll.js" combo="true" />
       <squarespace:script src="mutation-observer.js" combo="true" />
       <squarespace:script src="site.js" combo="true" />
+      <script>
+Y.use('node', 'sqs-event-list', function(Y) {
+  var container = Y.one('#block-c5e23e6af80eb09d47f0');
+  if (container) { 
+    container.plug(Y.Plugin.Sqs.EventList, {
+      feedURL: '/calendar/?view=list&format=json',
+      limit: 5
+    });
+  }
+});
+</script>
       </div>
     </div>
 
