@@ -1,0 +1,74 @@
+<!-- Event Item -->
+{.section item}
+  <article class="eventitem">
+    <!-- Description -->
+	  <div class="eventitem-column-content">
+        <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
+		<!-- BODY -->
+		  {.section body} 
+		  {@} 
+		  {.end}
+		<!-- end BODY -->
+	   </div>
+	  		<!-- EVENTS SIDEBAR -->
+		  <div class="eventsidebar" style="float: left; text-align: left; width: 30%;  max-width: 240px; min-width: 240px; display: block; margin-left: 30px; padding-left: 30px; border-left: 1px solid #bebebe; ">
+		    {.if sourceUrl}
+			  <div class="sqs-block-button-container--right"><a href="{sourceUrl}" class="ticketlink" target="_blank">
+			  Get Tickets</a>
+			  </div>
+		    {.end}
+		  <!-- Sidebar Information -->
+		  {.section location}
+		    <div class="sidebarInfo" style="font-weight: bold; ">
+		     {.if addressLine2}<p><span style="font-weight: normal; line-height: 10px; font-style: italic;">{addressLine2}</span></p>{.end}
+			 {.if addressLine1}<p><span style="font-weight: normal;">{addressLine1}</span></p>{.end}
+			 {.if addressTitle}<p>Doors: <br><span style="font-weight: normal;">{addressTitle}</span></p>{.end}
+			 {.if addressCountry}<p>Presented by: <br><span style="font-weight: normal;">{addressCountry}</span>{.end}
+			 </p>
+            </div> 
+          {.end}
+          <!-- end Sidebar Information -->
+		  </div>
+	     </div>
+	    <!-- end EVENTS SIDEBAR -->
+    <!-- end Description -->
+    <div class="clear"></div>
+  	<br><p class="entry-actions">
+	  {@|like-button}{@|social-button-inline}
+    </p>
+  	<div class="clear"></div>
+  </article>
+{.end}
+<!-- end Event Item -->
+<div class="clear"></div>
+
+
+<script>
+
+	Y.use('node', function(Y) {
+
+		Y.on('domready', function() {
+
+			// If we're visiting the item details page from the calendar view,
+			// the "Back to All Events" link should go back to the calendar (and the month of the current item we're viewing)
+
+			var eventCollectionItemQS = Y.QueryString.parse(location.search.substring(1));
+			var eventCollectionItemBackLink = Y.one('.eventitem-backlink');
+			var eventCollectionItemPrevItemLink = Y.one('.eventitem-pager-newer');
+			var eventCollectionItemNextItemLink = Y.one('.eventitem-pager-older');
+			var eventCollectionItemAdditionalStrVars = '?view=calendar&month={.section item}{startDate|date %B}-{startDate|date %Y}{.end}';
+
+			if(eventCollectionItemQS.view === 'calendar') {
+
+				eventCollectionItemBackLink.setAttribute('href', eventCollectionItemBackLink.getAttribute('href') + eventCollectionItemAdditionalStrVars);
+				eventCollectionItemPrevItemLink.setAttribute('href', eventCollectionItemPrevItemLink.getAttribute('href') + eventCollectionItemAdditionalStrVars);
+				eventCollectionItemNextItemLink.setAttribute('href', eventCollectionItemNextItemLink.getAttribute('href') + eventCollectionItemAdditionalStrVars);
+
+			}  
+
+		});
+
+	});
+
+
+</script>
