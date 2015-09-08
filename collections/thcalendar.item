@@ -19,12 +19,12 @@
 		    {.end}
 		  <!-- Sidebar Information -->
 		  {.section location}
-		    <div class="sidebarInfo" style="font-weight: bold; ">
+		    <div class="sidebarInfo" style="font-weight: bold; "t
+		     {.if item.customContent.thTicketsHowto}<p>How to Get Tickets: <br><span style="font-weight: normal;">{item.customContent.thTicketsHowto}</span>{.end}
 		     {.if item.customContent.thTime}<p>Showtime: <br><span style="font-weight: normal; line-height: 10px; font-style: italic;">{item.customContent.thTime}</span></p>{.end}
 			 {.if item.customContent.thPrice}<p>Ticket Price: <br><span style="font-weight: normal;">{item.customContent.thPrice}</span></p>{.end}
 			 {.if item.customContent.thDoors}<p>Doors: <br><span style="font-weight: normal;">{item.customContent.thDoors}</span></p>{.end}
 			 {.if item.customContent.thProducer}<p>Presented by: <br><span style="font-weight: normal;">{item.customContent.thProducer}</span>{.end}
-			 {.if item.customContent.thTicketsHowTo}<p>How to Get Tickets: <br><span style="font-weight: normal;">{item.customContent.thTicketsHowTo}</span>{.end}
 			 </p>
             </div> 
           {.end}
