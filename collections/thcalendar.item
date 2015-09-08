@@ -24,7 +24,7 @@
 			 {.if thPrice}<p>Ticket Price: <br><span style="font-weight: normal;">{thPrice}</span></p>{.end}
 			 {.if thDoors}<p>Doors: <br><span style="font-weight: normal;">{thDoors}</span></p>{.end}
 			 {.if thProducer}<p>Presented by: <br><span style="font-weight: normal;">{thProducer}</span>{.end}
-			 {.if thTicketsHowTo}<p>Presented by: <br><span style="font-weight: normal;">{thTicketsHowTo}</span>{.end}
+			 {.if thTicketsHowTo}<p>How to Get Tickets: <br><span style="font-weight: normal;">{thTicketsHowTo}</span>{.end}
 			 </p>
             </div> 
           {.end}
