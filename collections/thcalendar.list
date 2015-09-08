@@ -84,8 +84,8 @@
           <a href="{fullUrl}">{title}</a>
         </h1>
         <p class="date">
-          <time class="event-meta-heading eventlist-meta-date">{startDate|date %A, %B %e, %Y}{.same-day?}<!--{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}-->{.end}</time>
-          <time class="event-meta-heading eventlist-meta-date">{startDate|date %a, %B %e, %Y}{.same-day?}<!--{.or}{.if endDate} &ndash; {endDate|date %a, %B %e, %Y}{.end}-->{.end}</time>
+          <time class="event-meta-heading eventlist-meta-date">{startDate|date %a, %B %e, %Y}{.same-day?}<!--{.or}{.if endDate} &ndash; {endDate|date %a, %B %e, %Y}{.end}
+          {.end}</time>
           <span class="eventlist-meta-time">
               <time class="event-meta-heading">{startDate|date %l:%M%P}{.same-day?}{.if endDate} &ndash; {endDate|date %l:%M%P}{.end}{.end}</time>
             <time class="event-time-12hr">{startDate|date %l:%M%P}{.same-day?}{.if endDate} &ndash; {endDate|date %l:%M%P}{.end}{.end}</time>
