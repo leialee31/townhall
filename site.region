@@ -78,7 +78,7 @@
               <br> <!-- this keeps the inline-blocks from collapsing -->
               <div class="page-desc">
                 <p class="date entry-author">
-                  {.if item.customContent.thSubtitle}<div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px; font-size: 18px;">{item.customContent.thSubtitle}{.end}
+                  {.if item.customContent.thSubtitle}<div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px; font-size: 18px;">{item.customContent.thSubtitle}{.end}<br>
                   <time class="published" datetime="{addedOn|date %F}">{addedOn|date %A, %B %e, %Y}</time>
                 </p>
               </div>
