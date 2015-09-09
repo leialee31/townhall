@@ -78,7 +78,7 @@
               <br> <!-- this keeps the inline-blocks from collapsing -->
               <div class="page-desc">
                 <p class="date entry-author">
-                  <time class="published" datetime="{addedOn|date %F}">{addedOn|date %A, %B %e, %Y} &#8226; {startDate|date %l:%M%P}</time>
+                  <time class="published" datetime="{addedOn|date %F}">{addedOn|date %A, %B %e, %Y} &#8226; {addedOn|date %l:%M%P}</time>
                 </p>
               </div>
               {.end}
