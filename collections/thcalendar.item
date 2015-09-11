@@ -4,6 +4,9 @@
     <!-- Description -->
 	  <div class="eventitem-column-content">
         <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
+
+          <div class="page-desc" style="background: transparent; margin-top: 0; padding: 0px; font-size: 22px;">{excerpt}{.end}<time class="event-meta-heading">{startDate|date %A, %B %e, %Y}{.same-day?} &#8226; {startDate|date %l:%M%P}{.or}{.if endDate} &ndash; {endDate|date %A, %B %e, %Y}{.end}</time></div>{.end}</p>
+          
 		<!-- BODY -->
 		  {.section body} 
 		  {@} 
