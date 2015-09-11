@@ -4,7 +4,7 @@
     <!-- Description -->
 	  <div class="eventitem-column-content">
         <div style="width: 60%; max-width: 600px; text-align: justify; display: block; float: left;">
-                <p class="date entry-author" style="font-size: 22px; font-weight: bold;">
+                <p class="date entry-author" style="font-size: 22px; font-weight: bold; margin-top: 0px; padding-top: 0px;">
                   <time class="published" datetime="{addedOn|date %F}">{addedOn|date %A, %B %e, %Y} &#8226; {addedOn|date %l:%M%P}</time>
                 </p> 
 
