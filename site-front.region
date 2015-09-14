@@ -93,7 +93,23 @@
           <div class="content">
 
             <div class="content-inner" data-content-field="main-content">
-              {@|apply thScroller.block}
+              <squarespace:query collection="event" limit="60">      
+  <div class="featured-wrapper thScroller" id="thScroller">
+    {.repeated section items}
+    <div class="featured-post">
+           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;">{addedOn|date %a}<br><span style="font-size: 30px; line-height: 25px;">{addedOn|date %d}</span><br><span style="line-height: 22px;">{addedOn|date %b}</span>
+      </time>      <a href="{fullUrl}">
+      <div class="content-fill">
+        {.main-image?}<img {@|image-meta} />{.end}
+      </div>
+      <div class="content-title">
+      <span class="scrollerTitle">{title}</span>
+         </div>
+      </a>
+    </div>
+    {.end}
+  </div>
+</squarespace:query>
             </div>
             {.if categories || tags || sourceUrl || pagination}
             <footer class="entry-footer clear">
@@ -109,25 +125,6 @@
                     {.section sourceUrl}<div class="source-url"><a href="{sourceUrl}" target="_blank">Source</a></div>{.end}
                     {.end}
                   </div>
-                  {.end}
-
-                  {.if pagination}
-                  <nav class="pagination cf">
-                    {.if startDate}
-                    <a href="{collection.fullUrl}" class="back-to-all">Back to All</a>
-                    {.if pagination.prevItem}<div class="newer"><a href="{pagination.prevItem.fullUrl}">Previous</a></div>{.or}<div class="newer mute">Previous</div>{.end}
-                    {.if pagination.nextItem}<div class="older"><a href="{pagination.nextItem.fullUrl}">Next</a></div>{.or}<div class="older mute">Next</div>{.end}
-                    {.or}
-                    {.if productType}
-                    <a href="{collection.fullUrl}" class="back-to-all">Back to All</a>
-                    {.if pagination.prevItem}<div class="newer"><a href="{pagination.prevItem.fullUrl}">Previous</a></div>{.or}<div class="newer mute">Previous</div>{.end}
-                    {.if pagination.nextItem}<div class="older"><a href="{pagination.nextItem.fullUrl}">Next</a></div>{.or}<div class="older mute">Next</div>{.end}
-                    {.or}
-                    {.if pagination.prevItem}<div class="newer"><a href="{pagination.prevItem.fullUrl}">Newer</a></div>{.or}<div class="newer mute">Newer</div>{.end}
-                    {.if pagination.nextItem}<div class="older"><a href="{pagination.nextItem.fullUrl}">Older</a></div>{.or}<div class="older mute">Older</div>{.end}
-                    {.end}
-                    {.end}
-                  </nav>
                   {.end}
                 </div>
               </div>
@@ -213,7 +210,23 @@
           <div class="sqs-cart-dropzone"></div>
           <div class="content">
             <div class="content-inner" data-content-field="main-content">
-            {squarespace.main-content}
+            <squarespace:query collection="event" limit="60">      
+  <div class="featured-wrapper thScroller" id="thScroller">
+    {.repeated section items}
+    <div class="featured-post">
+           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;">{addedOn|date %a}<br><span style="font-size: 30px; line-height: 25px;">{addedOn|date %d}</span><br><span style="line-height: 22px;">{addedOn|date %b}</span>
+      </time>      <a href="{fullUrl}">
+      <div class="content-fill">
+        {.main-image?}<img {@|image-meta} />{.end}
+      </div>
+      <div class="content-title">
+      <span class="scrollerTitle">{title}</span>
+         </div>
+      </a>
+    </div>
+    {.end}
+  </div>
+</squarespace:query>
             </div>
             {.section collection}
               {.equal? typeName "events"}
@@ -236,25 +249,6 @@
         </section>
         {.end}
       {.end}
-
-      {.section collection}{.equal? typeName "products"}
-        {.section categories}
-        <footer id="categoryNav" class="entry-footer clear">
-          <div class="outer-wrapper">
-            <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
-            <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
-            <nav class="category-nav">
-              <ul class="category-nav-links">
-                <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a></li>
-                {.repeated section @}
-                <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
-                {.end}
-              </ul>
-            </nav>
-          </div>
-        </footer>
-        {.end}
-      {.end}{.end}
 
         <!--FOOTER WITH OPEN BLOCK FIELD-->
         <footer id="footer">
