@@ -211,11 +211,11 @@
           <div class="content">
             <div class="content-inner" data-content-field="main-content">
             <squarespace:query collection="event" limit="60">      
-  <div class="featured-wrapper thScroller" id="thScroller">
+            <div class="featured-wrapper thScroller" id="thScroller">
     {.repeated section items}
     <div class="featured-post">
-           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;"></span>
-      </time>      <a href="{fullUrl}">
+           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;">{addedOn|date %a}<br><span style="font-size: 30px; line-height: 25px;">{addedOn|date %d}</span><br><span style="line-height: 22px;">{addedOn|date %b}</span>
+      <a href="{fullUrl}">
       <div class="content-fill">
         {.main-image?}<img {@|image-meta} />{.end}
       </div>
@@ -227,6 +227,7 @@
     {.end}
   </div>
 </squarespace:query>
+{squarespace.main-content}
             </div>
             {.section collection}
               {.equal? typeName "events"}
