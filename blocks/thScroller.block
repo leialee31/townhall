@@ -1,0 +1,17 @@
+<squarespace:query collection="event" limit="60">      
+  <div class="featured-wrapper thScroller" id="thScroller">
+    {.repeated section items}
+    <div class="featured-post">
+           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;">{addedOn|date %a}<br><span style="font-size: 30px; line-height: 25px;">{addedOn|date %d}</span><br><span style="line-height: 22px;">{addedOn|date %b}</span>
+      </time>      <a href="{fullUrl}">
+      <div class="content-fill">
+        {.main-image?}<img {@|image-meta} />{.end}
+      </div>
+      <div class="content-title">
+      <span class="scrollerTitle">{title}</span>
+         </div>
+      </a>
+    </div>
+    {.end}
+  </div>
+</squarespace:query>
