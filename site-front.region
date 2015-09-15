@@ -197,9 +197,9 @@
             <div class="featured-wrapper thScroller" id="thScroller">
     {.repeated section items}
     <div class="featured-post">
-           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;">{.if item.customContent.thShortDay}<span>{item.customContent.thShortDay}</span>{.end}<br>
-              {.if thShortDate}<span style="font-size: 30px; line-height: 25px;">{thShortDate}</span>{.end}<br>
-              {.if thShortMonth}<span style="line-height: 22px;">{thShortMonth}</span>{.end}</time>
+           <time class="summary-metadata-item summary-metadata-item--date" datetime="{addedOn|date}" style="color: white; display: block;"><span>{thEvents.thShortDay}</span><br>
+              <span style="font-size: 30px; line-height: 25px;">{thEvents.thShortDate}</span><br>
+              <span style="line-height: 22px;">{thEvents.thShortMonth}</span></time>
       <a href="{fullUrl}">
       <div class="content-fill">
         {.main-image?}<img {@|image-meta} />{.end}
