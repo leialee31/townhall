@@ -93,7 +93,7 @@
           <div class="content">
 
             <div class="content-inner" data-content-field="main-content">
-              <squarespace:query collection="event" limit="60">      
+              <section class="gridwall js-collection -clear" data-collection="/event/">      
   <div class="featured-wrapper thScroller" id="thScroller">
     {.repeated section items}
     <div class="featured-post">
@@ -109,7 +109,7 @@
     </div>
     {.end}
   </div>
-</squarespace:query>
+</section>
             </div>
             {.if categories || tags || sourceUrl || pagination}
             <footer class="entry-footer clear">
